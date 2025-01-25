@@ -11,6 +11,7 @@ module com.example.apppackage {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires java.base;
     requires jakarta.mail;
 
     opens com.example.apppackage to javafx.fxml;
