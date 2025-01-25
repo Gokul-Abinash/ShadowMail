@@ -1,0 +1,32 @@
+.root{
+    -fx-background-color:white;
+}
+.text-field, .text-area {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-text-fill:black;
+}
+.label{
+    -fx-text-fill:black;
+    -fx-text-size:14px;
+}
+#sizeoverload{
+    -fx-text-fill:#ff2200;
+}
+.button {
+    -fx-background-color:#ff0000;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+}
+#discardId{
+    -fx-background-color: #ff0000;
+}
+#sendId,#attachId{
+    -fx-background-color: #0056b3;
+}
+.vbox {
+    -fx-padding: 10;
+}

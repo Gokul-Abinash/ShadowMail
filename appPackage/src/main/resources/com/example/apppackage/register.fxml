@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="667.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.apppackage.RegisterController">
+    <children>
+        <AnchorPane prefHeight="93.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+            <children>
+                <ImageView fx:id="mailImageView" fitHeight="112.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../../../../../Downloads/PSG-Tech-Mail-Logo.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="userRegistrationLabel" layoutX="145.0" layoutY="25.0" prefHeight="57.0" prefWidth="273.0" text="User Registration" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label fx:id="firstnameLabel" layoutX="112.0" layoutY="142.0" text="Firstname" />
+        <TextField fx:id="firstnameTextField" layoutX="112.0" layoutY="164.0" prefHeight="26.0" prefWidth="400.0" promptText="Firstname" />
+        <Label fx:id="lastnameLabel" layoutX="112.0" layoutY="194.0" text="Lastname" />
+        <TextField fx:id="lastnameTextField" layoutX="112.0" layoutY="216.0" prefHeight="26.0" prefWidth="400.0" promptText="Lastname" />
+        <Label fx:id="emailIdLabel" layoutX="112.0" layoutY="246.0" text="Email Id" />
+        <TextField fx:id="emailIdTextField" layoutX="112.0" layoutY="268.0" prefHeight="26.0" prefWidth="400.0" promptText="Email Id" />
+        <Label fx:id="emailPasswordLabel" layoutX="112.0" layoutY="299.0" text="Email Password" />
+        <Label fx:id="usernameLabel" layoutX="112.0" layoutY="351.0" text="Username" />
+        <TextField fx:id="usernameTextField" layoutX="112.0" layoutY="374.0" prefHeight="26.0" prefWidth="400.0" promptText="Username" />
+        <Label fx:id="passwordLabel" layoutX="113.0" layoutY="405.0" text="Password" />
+        <Label fx:id="confirmPasswordLabel" layoutX="111.0" layoutY="459.0" text="Confirm Password" />
+        <Button fx:id="registerButton" layoutX="112.0" layoutY="539.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="26.0" prefWidth="400.0" style="-fx-background-color: #000000;" text="Register" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="closeButton" layoutX="112.0" layoutY="592.0" mnemonicParsing="false" onAction="#CloseButtonOnAction" prefHeight="26.0" prefWidth="400.0" style="-fx-background-color: #000000;" text="Close" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <PasswordField fx:id="emailSetPasswordField" layoutX="112.0" layoutY="321.0" prefHeight="26.0" prefWidth="400.0" promptText="Email Password" />
+        <PasswordField fx:id="setUserPasswordField" layoutX="111.0" layoutY="427.0" prefHeight="26.0" prefWidth="399.0" promptText="Password" />
+        <PasswordField fx:id="setUserConfirmPasswordField" layoutX="111.0" layoutY="478.0" prefHeight="26.0" prefWidth="399.0" promptText="Confirm Password" />
+        <Label fx:id="registrationMsgLabel" alignment="CENTER" layoutX="74.0" layoutY="109.0" prefHeight="26.0" prefWidth="477.0" textAlignment="CENTER" textFill="#0600ff">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="passwordValidateLabel2" alignment="CENTER_RIGHT" layoutX="113.0" layoutY="454.0" prefHeight="26.0" prefWidth="399.0" textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+      <Label fx:id="emailValidateLabel" alignment="CENTER_RIGHT" layoutX="112.0" layoutY="241.0" prefHeight="26.0" prefWidth="399.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordValidateLabel1" alignment="CENTER_RIGHT" layoutX="111.0" layoutY="399.0" prefHeight="26.0" prefWidth="399.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameValidateLabel" alignment="CENTER_RIGHT" layoutX="112.0" layoutY="346.0" prefHeight="26.0" prefWidth="400.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
